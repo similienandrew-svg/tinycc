@@ -141,3 +141,13 @@ jobs:
       run: |
         uname -m  # riscv64
         ./configure && make && make test -k
+
+  upload:
+    uses: actions/upload-artifact@v7.0.1
+    with:
+    name: heehee
+
+    path: 
+    retention-days: 6
+   
+          
